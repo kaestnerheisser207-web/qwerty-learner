@@ -64,9 +64,6 @@ function Root() {
                 <Route path="/*" element={<Navigate to="/" />} />
               </>
             )}
-            {/* Mobile users are sent to the landing page, but /typing stays
-                reachable so the "立即开始" button never has to leave this host. */}
-            <Route path="/typing" element={<TypingPage />} />
             <Route path="/mobile" element={<MobilePage />} />
           </Routes>
         </Suspense>
